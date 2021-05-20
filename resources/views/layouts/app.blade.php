@@ -50,7 +50,7 @@
 
         <main class="container mx-auto max-w-custom flex">
             <div class="w-70 mr-5">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quaerat labore sint ad, ratione molestias nisi velit omnis consequatur sunt dicta voluptatum laudantium tempore beatae veritatis id neque non pariatur animi corporis temporibus nulla voluptates vero. Ducimus sit maiores soluta iste ea minima dicta eveniet reprehenderit perspiciatis fugit tempore inventore voluptas dolor illo illum, ipsam architecto. Vel, neque. Quaerat in sunt iusto obcaecati officia sit fuga minus numquam impedit? Unde tenetur praesentium at. Totam cupiditate nostrum dicta harum architecto suscipit eius perspiciatis quia quaerat impedit. Dignissimos, sunt nesciunt. Voluptate ipsum excepturi error reiciendis dicta odio? Facere, exercitationem non. Sit, cum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo ex necessitatibus odit nisi minus ipsum magni ullam, voluptatem molestiae?
             </div>
             <div class="w-175">
                 <nav class="flex item-center justify-between text-xs">
