@@ -10341,7 +10341,7 @@ select {
 }
 
 .max-w-custom {
-  max-width: 62.5rem;
+  max-width: 68.5rem;
 }
 
 .min-h-0 {
@@ -34725,7 +34725,7 @@ select {
   }
 
   .sm\:max-w-custom {
-    max-width: 62.5rem;
+    max-width: 68.5rem;
   }
 
   .sm\:min-h-0 {
@@ -58939,7 +58939,7 @@ select {
   }
 
   .md\:max-w-custom {
-    max-width: 62.5rem;
+    max-width: 68.5rem;
   }
 
   .md\:min-h-0 {
@@ -83153,7 +83153,7 @@ select {
   }
 
   .lg\:max-w-custom {
-    max-width: 62.5rem;
+    max-width: 68.5rem;
   }
 
   .lg\:min-h-0 {
@@ -107367,7 +107367,7 @@ select {
   }
 
   .xl\:max-w-custom {
-    max-width: 62.5rem;
+    max-width: 68.5rem;
   }
 
   .xl\:min-h-0 {
@@ -131581,7 +131581,7 @@ select {
   }
 
   .\32xl\:max-w-custom {
-    max-width: 62.5rem;
+    max-width: 68.5rem;
   }
 
   .\32xl\:min-h-0 {
