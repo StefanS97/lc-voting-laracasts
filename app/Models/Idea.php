@@ -12,6 +12,8 @@ class Idea extends Model
 
     protected $guarded = [];
 
+    const PAGINATION_COUNT = 10;
+
     public function sluggable(): array
     {
         return [
