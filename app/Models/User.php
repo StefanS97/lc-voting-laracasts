@@ -53,4 +53,9 @@ class User extends Authenticatable
         .'?s=200'
         .'&d=mp';
     }
+
+    public function votes()
+    {
+        return $this->belongsToMany(Idea::class, 'votes');
+    }
 }
