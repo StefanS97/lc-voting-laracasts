@@ -17,6 +17,7 @@ class CreateIdeasTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('restrict');
             $table->foreignId('category_id')->constrained()->onDelete('restrict');
+            $table->foreignId('status_id')->constrained()->onDelete('restrict');
             $table->string('title');
             $table->string('slug')->nullable();
             $table->text('description');
