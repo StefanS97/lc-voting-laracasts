@@ -25,11 +25,19 @@ class IdeaIndex extends Component
         }
 
         if ($this->hasVoted) {
-            $this->idea->removeVote(auth()->user());
+            try {
+                $this->idea->removeVote(auth()->user());
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
             $this->votesCount--;
             $this->hasVoted = false;
         } else {
-            $this->idea->vote(auth()->user());
+            try {
+                $this->idea->vote(auth()->user());
+            } catch (\Throwable $th) {
+                //throw $th;
+            }
             $this->votesCount++;
             $this->hasVoted = true;
         }

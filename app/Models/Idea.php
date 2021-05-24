@@ -56,6 +56,10 @@ class Idea extends Model
 
     public function vote(User $user)
     {
+        if ($this->isVotedByUser($user)) {
+            abort(404);
+        }
+
         Vote::create([
             'idea_id' => $this->id,
             'user_id' => $user->id,
@@ -64,9 +68,15 @@ class Idea extends Model
 
     public function removeVote(User $user)
     {
-        Vote::where('idea_id', $this->id)
-            ->where('user_id', $user->id)
-            ->first()
-            ->delete();
+
+        $voteToDelete =  Vote::where('idea_id', $this->id)
+                             ->where('user_id', $user->id)
+                             ->first();
+       if($voteToDelete) {
+           $voteToDelete->delete();
+       } else {
+           abort(404);
+       }
+
     }
 }
