@@ -1,4 +1,4 @@
-<div x-cloak x-data="{ isOpen:false }" x-show="isOpen" @keydown.escape.window="isOpen = false" @custom-show-edit-modal.window="isOpen = true"
+<div x-cloak x-data="{ isOpen:false }" x-show="isOpen" @keydown.escape.window="isOpen = false" @custom-show-edit-modal.window="isOpen = true $nextTick(() => $refs.title.focus())"
      x-init="window.livewire.on('ideaWasUpdated', () => {isOpen=false})" class="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
     <div class="flex items-end justify-center min-h-screen">
         <div x-show.transition.opacity="isOpen" class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
@@ -15,7 +15,7 @@
                 <p class="text-xs text-center leading-5 text-gray-500 px-6 mt-4">You have one hour to edit your idea from the time you created it.</p>
                 <form wire:submit.prevent="updateIdea" action="#" method="POST" class="space-y-4 px-4 py-6">
                     <div>
-                        <input wire:model.defer="title" type="text" class="w-full text-sm bg-gray-100 border-none rounded-xl placeholder-gray-900 px-4 py-2" placeholder="Your Idea" required>
+                        <input wire:model.defer="title" x-ref="title" type="text" class="w-full text-sm bg-gray-100 border-none rounded-xl placeholder-gray-900 px-4 py-2" placeholder="Your Idea" required>
                         @error('title')
                             <p class="text-red text-xs mt-1">{{ $message }}</p>
                         @enderror

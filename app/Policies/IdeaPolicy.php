@@ -33,7 +33,7 @@ class IdeaPolicy
 
     public function delete(User $user, Idea $idea)
     {
-        //
+        return $user->id === $idea->user_id || $user->isAdmin();
     }
 
     public function restore(User $user, Idea $idea)
