@@ -20,7 +20,7 @@ class SetStatus extends Component
     
     public function setStatus()
     {
-        if (!auth()->check() || !auth()->user()->isAdmin()) {
+        if (auth()->guest() || !auth()->user()->isAdmin()) {
             abort(403);
         }
 
